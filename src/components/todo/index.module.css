@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  width: 250px;
+  justify-content: space-between;
+}
+
+.item {
+  font-family: monospace;
+  cursor: pointer;
+  color: #fff;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: lightgray;
+}
+
+.removeTodo {
+  color: #fff;
+  cursor: pointer;
+  margin-left: 20px;
+}

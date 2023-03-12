@@ -1,0 +1,18 @@
+.list {
+  margin-top: 1rem;
+  text-align: left;
+  list-style: none;
+  margin-left: 0;
+    padding-left: 0;
+}
+.list__container {
+  height: 100px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+  width: 255px;
+}
