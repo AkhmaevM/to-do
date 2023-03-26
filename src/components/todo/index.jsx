@@ -18,9 +18,8 @@ export const Todo = ({ todo }) => {
   }
 
   return (
-
     <div className={styles.container}>
-      <li className={styles.item} onClick={toggleTodoItem}>
+     <li className={styles.item} onClick={toggleTodoItem}>
         {todo.completed ? "👌" : "👋"}{" "}
         <span
           className={cx({

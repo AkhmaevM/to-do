@@ -3,6 +3,8 @@ import { ADD_TODO, TOGGLE_TODO } from "../actions/types/todo";
 const initialState = {
   allIds: [],
   byIds: {},
+  completedIds:[],
+  notCompletedIds:[]
 };
 
 export default function todoReducer(state = initialState, action) {
@@ -41,6 +43,9 @@ export default function todoReducer(state = initialState, action) {
             completed: !targetTodo.completed,
           },
         },
+
+        completedIds: [...state.completedIds, id],
+        notCompletedIds:[...state.notCompletedIds, id]
       };
 
     }

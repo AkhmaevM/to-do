@@ -22,11 +22,12 @@ export const AddTodo = () => {
 
 
   return (
-    <div>
-      <input type="text" value={value} onChange={onInputChange} />
-      <button className={styles.addButton} onClick={handleAddTodo}>
+    <div className="wrapper">
+       <button className={styles.addButton} onClick={handleAddTodo}>
         Добавить задачу
       </button>
+      <input type="text" value={value} onChange={onInputChange} />
+     
     </div>
   );
 };

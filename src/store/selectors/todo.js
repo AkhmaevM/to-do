@@ -1,12 +1,12 @@
 const todoSelector = (store) => store.todo;
 
-export const todoIdsSelector = (store) => todoSelector(store)?.allIds || [];
+export const todoIdsSelector = (store) => todoSelector(store)?.allIds || todoSelector(store)?.completedIds || todoSelector(store)?.notCompletedIds;
 
 export const todoByIdSelector = (store, id) => {
   const todoStore = todoSelector(store);
 
   if (!todoStore) {
-    return {};
+    return;
   }
 
   const todoItem = todoStore.byIds[id];
